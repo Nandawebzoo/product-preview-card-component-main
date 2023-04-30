@@ -24,12 +24,12 @@ The designs were created to the following widths:
 
 ### Body Copy
 
-- Font size (paragraph): 14px
+<!-- - Font size (paragraph): 14px -->
 
 ### Font
 
-- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+<!-- - Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
 - Weights: 500, 700
 
 - Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
-- Weights: 700
+- Weights: 700 -->
