@@ -9,28 +9,65 @@
     --color-white: hsl(0, 0%, 100%);
 }
 
-body .p {
-    font-size: 14px;
+body {
+    background-color: var(--color-cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
 }
 
 .container {
-    gap: 2rem;
     display: flex;
+    background-color: var(--color-white);
+    width: 600px;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
-.row {
-    display: flex;
-    background-color: var(--color-cream);
-    display: flex;
-    flex-wrap: wrap;
+.article1 {
+    width: 50%;
 }
 
 .product-img {
-    flex: 1 1 45rem;
+    width: 50%;
+    object-fit: cover;
+}
+
+.article2 {
+    width: 50%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.article2 h1 {
+    font-size: 2rem;
+    font-family: Fraunces;
+    margin: 0;
+    color: var(--color-dark-blue);
+}
+.article2 h2 {
+    font-family: "Montserrat";
+    font-weight: 100;
+    font-size: 0.8rem;
+    color: var(--color-grayish-blue);
+    margin: 0;
+    letter-spacing: 4px;
+}
+
+.article2 p {
+    font-family: "Montserrat";
+    font-size: 0.9rem;
+    color: var(--color-grayish-blue);
+    margin: 0;
 }
 
 .attribution {
-    font-size: 11px;
+    margin-top: 10rem;
+    font-size: 0.75rem;
     text-align: center;
     display: flex;
 }
@@ -38,33 +75,58 @@ body .p {
     color: hsl(228, 45%, 44%);
 }
 
+.prices {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.price-discount {
+    font-size: 2rem;
+    color: var(--color-dark-cyan);
+    font-weight: bold;
+    font-weight: 800;
+    font-family: Fraunces;
+}
+
+.price-before-discount {
+    font-size: 1rem;
+    color: var(--color-grayish-blue);
+}
+
 .btn {
     background: var(--color-dark-cyan);
-    border-radius: 1rem;
+    border-radius: 12px;
     border: 0;
     color: white;
-    display: inline-block;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin: 0 auto;
-    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
     width: 100%;
     transition: all 0.3s;
+    font-weight: bold;
 }
 
-.btn:hover {
-    color: white;
-    background-color: green;
-}
-
-@media (max-width: 1440px) {
+@media screen and (max-width: 376px) {
     html {
-        font-size: 75%;
+        font-size: 14px;
     }
-}
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
 
-@media (max-width: 375px) {
-    html {
-        font-size: 62%;
+    .product-img {
+        width: 100%;
+        max-height: 240px;
+    }
+
+    .article2 {
+        width: unset;
+        padding: 24px;
+        gap: 1rem;
     }
 }
