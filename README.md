@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://github.com/Nandawebzoo/product-preview-card-component-main/blob/main/screenshots/screenshot.png?raw=true)
 
 ### Links
 
